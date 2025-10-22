@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Haga su reserva</h1>
-    <form action="/procesar-datos.php "method="get">
+    <form action="/procesar-datos.php"method="get">
         <fieldset>
             <legend>Datos Personales</legend>
         <div>
@@ -43,24 +43,11 @@
             <label for="time">Hora de llegada</label>
             <input type="time" name="hora de llegada" id="time">
         </fieldset>
-        
-        <!-- Botones de acción -->
-        <div class="botones-container">
-            <button type="submit" class="btn btn-enviar">
-                <span class="icono">📤</span>
-                Enviar Reserva
-            </button>
-            
-            <button type="reset" class="btn btn-reiniciar">
-                <span class="icono">🔄</span>
-                Reiniciar
-            </button>
-            
-            <button type="button" class="btn btn-volver" onclick="window.location.href='INDEX.HTML'">
-                <span class="icono">🏠</span>
-                Volver al Inicio
-            </button>
-        </div>
+        <input type="submit" value="Enviar los datos">
+        <input type="reset" value="reiniciar">
+        <button><a href="index.html">Volver</a></button>
+
+
     </form>
 </body>
 </html>
