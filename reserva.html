@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Haga su reserva</h1>
+    <form action="/procesar-datos.php "method="get">
+        <fieldset>
+            <legend>Datos Personales</legend>
+        <div>
+        <label for="nom">Nombre:</label>
+        <input type="text" name="nombre" id="nom" maxlength="100" autofocus required>
+        <label for="apellido">Apellido:</label>
+        <input type="text"name="apellido" id="apellido" maxlength="100" required>
+        <p><label for="DNI">DNI:</label>
+        <input type="text"name="DNI" id="DNI" maxlength="10" placeholder="DNI con letra" required>
+        </p>
+        </div>
+        </fieldset>
+        <fieldset>
+        <legend>Datos de tu estancia</legend>
+        <p><label for="">Individual</label>
+        <input type="radio" name="habitacion" value="individual" required>
+        
+        <label for="">Doble</label>
+        <input type="radio" name="habitacion" value="doble" required>
+        <label for="">Triple</label>
+        <input type="radio" name="habitacion" value="triple" required>
+        <label for="personas">Numero de personas</label>
+        <select name="personas" id="personas">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+            <label for="mascotas">Llevo mascotas</label>
+            <input type="checkbox" name="mascotas" id="mascotas">
+            <label for="fecha">fecha de llegada</label>
+            <input type="date" name="fecha de llegad" id="fecha">
+            <label for="time">Hora de llegada</label>
+            <input type="time" name="hora de llegada" id="time">
+        </fieldset>
+        
+        <!-- Botones de acción -->
+        <div class="botones-container">
+            <button type="submit" class="btn btn-enviar">
+                <span class="icono">📤</span>
+                Enviar Reserva
+            </button>
+            
+            <button type="reset" class="btn btn-reiniciar">
+                <span class="icono">🔄</span>
+                Reiniciar
+            </button>
+            
+            <button type="button" class="btn btn-volver" onclick="window.location.href='INDEX.HTML'">
+                <span class="icono">🏠</span>
+                Volver al Inicio
+            </button>
+        </div>
+    </form>
+</body>
+</html>
